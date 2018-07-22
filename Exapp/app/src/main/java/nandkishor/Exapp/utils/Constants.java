@@ -8,8 +8,7 @@ import nandkishor.Exapp.entites.Movie;
 
 public class Constants {
 
-    public static final String IP_LOCAL_HOST = "http://192.168.43.124:3000";
-//    49.201.207.92
+    public static final String IP_LOCAL_HOST = "http://<Your_Public_IP>:3000";
 
     public static final String USER_INFO_PREFERENCE = "USER_INFO_PREFERENCE";
     public static final String USER_EMAIL = "USER_EMAIL";
@@ -23,7 +22,7 @@ public class Constants {
     public static final String FIRE_BASE_PATH_MOVIES = "movies";
     public static final String FIRE_BASE_PATH_USER_FAVOURTS = "userFavourites";
 
-    public static final String YOUTUBE_API_KEY = "AIzaSyCM4woLQxFCSsV5RLHPs6LJjx5WIzKfaM8";
+    public static final String YOUTUBE_API_KEY = "<Place your youtube API ket here>";
 
 
     public static String encodeEmail(String email){
