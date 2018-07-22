@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Exapp</string>
+    <string name="mowgli_2018_film_official_trailer">Mowgli (2018 Film) - Official Trailer</string>
+    <string name="buy_lottery_tickets">Buy Lottery Tickets</string>
+    <string name="yes_i_am_film_critic_i_want_to_win_the_last_golden_ticket">Yes! I am Film Critic, I want to win The Last Golden Ticket</string>
+    <string name="youtubevideo">YoutubeVideo</string>
+    <string name="rate_this_movie">Rate This Movie</string>
+</resources>

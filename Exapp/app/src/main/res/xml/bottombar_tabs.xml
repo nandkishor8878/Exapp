@@ -1,0 +1,23 @@
+<tabs>
+
+
+    <tab
+        id = "@+id/tab_messages"
+        icon = "@drawable/ic_home"
+        title = "Movies"
+        />
+
+    <tab
+        id = "@+id/tab_friends"
+        icon = "@drawable/ic_favourite"
+        title = "My Lottery Tickets"
+        />
+
+    <tab
+        id = "@+id/tab_profile"
+        icon = "@drawable/ic_profile"
+        title = "Profile"
+        />
+
+
+</tabs>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+
+    <FrameLayout
+        android:id="@+id/list_favourite_movie_moviePlayer"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop">
+
+        <ImageView
+            android:id="@+id/list_favourite__movie_movieThumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/youtubevideo" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/list_favourite_movie_movieTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/list_favourite_movie_moviePlayer"
+        android:layout_marginTop="14dp"
+        android:text="@string/mowgli_2018_film_official_trailer"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/favourite_movie_release_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/list_favourite_movie_movieTitle"
+        android:text="7/10/2018"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/list_favourite_movie_countDown"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/favourite_movie_release_date"
+        android:text="Count Down"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/favourite_movie_ratting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/list_favourite_movie_countDown"
+        android:layout_marginTop="14dp"
+        android:text="Your Ratting for this movie"
+        android:textColor="@android:color/black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/favourite_movie_lottery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/favourite_movie_ratting"
+        android:layout_marginTop="16dp"
+        android:text="Your Lottery choices"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/list_favourite_movie_removeFavourite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Cancel My Ticket"
+        android:background="@drawable/favourite_request_decline"
+        android:layout_below="@+id/favourite_movie_lottery"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/list_favourite_movie_removeFavourite"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/darker_gray" />
+
+
+</RelativeLayout>

@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "264253371343",
+    "firebase_url": "https://exapp-f80ba.firebaseio.com",
+    "project_id": "exapp-f80ba",
+    "storage_bucket": "exapp-f80ba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:264253371343:android:25b9a19f0f1f66bf",
+        "android_client_info": {
+          "package_name": "com.example.dell.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "264253371343-m02vetnrmrqn3sps9frrf9556npoa6dr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZma3mAabX3noYiRt5LXzp9_DVgqSKfr8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:264253371343:android:ca137d85faa177a6",
+        "android_client_info": {
+          "package_name": "nandkishor.Exapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "264253371343-m02vetnrmrqn3sps9frrf9556npoa6dr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZma3mAabX3noYiRt5LXzp9_DVgqSKfr8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

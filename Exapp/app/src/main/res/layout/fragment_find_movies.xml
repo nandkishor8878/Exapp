@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <EditText
+        android:id="@+id/fragment_find_friends_searchBar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Find Movies By Name"
+        android:background="@drawable/search_bar_background"
+        android:drawableLeft="@mipmap/ic_search_"
+        android:drawableStart="@mipmap/ic_search_"
+        android:layout_margin="5dp"
+        android:textColorHint="#000"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/fragment_find_friends_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/fragment_find_friends_searchBar"
+        android:paddingBottom="50dp"/>
+
+    <TextView
+        android:id="@+id/fragment_find_friends_noResults"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Results Found"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:textSize="22sp"
+        android:visibility="gone" />
+
+    <com.roughike.bottombar.BottomBar
+
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        app:bb_tabXmlResource="@xml/bottombar_tabs"
+
+        />
+
+
+</RelativeLayout>
