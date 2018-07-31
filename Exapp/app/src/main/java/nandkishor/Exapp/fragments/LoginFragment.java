@@ -81,24 +81,6 @@ public class LoginFragment extends BaseFragment {
         mSocket.on("token",tokenListener());
 
         mSocket.connect();
-
-//        mForgotPassword.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                FirebaseAuth auth = FirebaseAuth.getInstance();
-//                final String UserEmailAddress = BaseFragment.getmSharedPreferences().getString(Constants.USER_EMAIL,"");
-//
-//                auth.sendPasswordResetEmail(UserEmailAddress)
-//                        .addOnCompleteListener(new OnCompleteListener<Void>() {
-//                            @Override
-//                            public void onComplete(@NonNull Task<Void> task) {
-//                                if (task.isSuccessful()) {
-//                                    Toast.makeText(getActivity(),"Password reset link has been sent to "+ UserEmailAddress +" !!",Toast.LENGTH_SHORT).show();
-//                                }
-//                            }
-//                        });
-//            }
-//        });
     }
 
 
