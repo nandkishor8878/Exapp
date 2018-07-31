@@ -3,6 +3,7 @@ package nandkishor.Exapp.fragments;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -10,7 +11,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
+
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 import org.json.JSONObject;
 
@@ -44,6 +51,9 @@ public class LoginFragment extends BaseFragment {
     @BindView(R2.id.fragment_login_register_button)
     Button mRegisterButton;
 
+    @BindView(R2.id.forgot_password)
+    TextView mForgotPassword;
+
     private Unbinder mUnbinder;
 
     private Socket mSocket;
@@ -71,7 +81,27 @@ public class LoginFragment extends BaseFragment {
         mSocket.on("token",tokenListener());
 
         mSocket.connect();
+
+//        mForgotPassword.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                FirebaseAuth auth = FirebaseAuth.getInstance();
+//                final String UserEmailAddress = BaseFragment.getmSharedPreferences().getString(Constants.USER_EMAIL,"");
+//
+//                auth.sendPasswordResetEmail(UserEmailAddress)
+//                        .addOnCompleteListener(new OnCompleteListener<Void>() {
+//                            @Override
+//                            public void onComplete(@NonNull Task<Void> task) {
+//                                if (task.isSuccessful()) {
+//                                    Toast.makeText(getActivity(),"Password reset link has been sent to "+ UserEmailAddress +" !!",Toast.LENGTH_SHORT).show();
+//                                }
+//                            }
+//                        });
+//            }
+//        });
     }
+
+
 
     @Nullable
     @Override
@@ -82,6 +112,10 @@ public class LoginFragment extends BaseFragment {
     }
 
 
+    @OnClick(R2.id.forgot_password)
+    public void setmForgotPassword(){
+        mLiveAccountServices.PasswordReset(mUserEmailEt.getText().toString(),mActivity);
+    }
 
     @OnClick(R2.id.fragment_login_login_button)
     public void setmLoginButton(){
@@ -104,6 +138,7 @@ public class LoginFragment extends BaseFragment {
             }
         };
     }
+
 
 
     @Override

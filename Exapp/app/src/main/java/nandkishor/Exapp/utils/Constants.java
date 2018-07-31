@@ -8,7 +8,8 @@ import nandkishor.Exapp.entites.Movie;
 
 public class Constants {
 
-    public static final String IP_LOCAL_HOST = "http://192.168.43.124:3000";
+    public static final String IP_LOCAL_HOST = "http://172.17.45.234:3000";
+//    public static final String IP_LOCAL_HOST = "http://49.201.207.92:3000";
 //    49.201.207.92
 
     public static final String USER_INFO_PREFERENCE = "USER_INFO_PREFERENCE";

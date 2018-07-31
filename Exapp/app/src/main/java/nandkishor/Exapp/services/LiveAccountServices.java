@@ -418,13 +418,29 @@ public class LiveAccountServices {
                 });
     }
 
+    public void PasswordReset(final String mUserEmail, final BaseFragmentActivity mActivity){
+
+        if (mUserEmail.isEmpty()){
+            Toast.makeText(mActivity,"Please enter your email",Toast.LENGTH_SHORT).show();
+        }else if (!isEmailValid(mUserEmail)){
+            Toast.makeText(mActivity,"Email is not valid",Toast.LENGTH_SHORT).show();
+        }else {
+            FirebaseAuth auth = FirebaseAuth.getInstance();
+
+            auth.sendPasswordResetEmail(mUserEmail)
+                    .addOnCompleteListener(new OnCompleteListener<Void>() {
+                        @Override
+                        public void onComplete(@NonNull Task<Void> task) {
+                            if (task.isSuccessful()) {
+                                Toast.makeText(mActivity, "Password reset link has been sent to " + mUserEmail + ". Please check the email.", Toast.LENGTH_SHORT).show();
+                            }
+                        }
+                    });
+        }
+    }
 
 
     private boolean isEmailValid(CharSequence email){
         return Patterns.EMAIL_ADDRESS.matcher(email).matches();
     }
-
-
-
-
 }
